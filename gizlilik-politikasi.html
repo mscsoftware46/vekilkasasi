@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vekil Kasası — Gizlilik Politikası</title>
+<style>
+  :root { --zemin:#f5f3ee; --kart:#fffdf8; --metin:#16191a; --ikincil:#5e6668; --vurgu:#14533f; --cizgi:#dcd8cf; }
+  @media (prefers-color-scheme: dark) { :root { --zemin:#121514; --kart:#1d2120; --metin:#e9ece9; --ikincil:#a9b2ae; --vurgu:#7cc4a4; --cizgi:#343a38; } }
+  body { margin:0; background:var(--zemin); color:var(--metin); font:17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size:30px; line-height:1.2; margin:0 0 4px; }
+  h2 { font-size:19px; margin:32px 0 8px; color:var(--vurgu); }
+  .tarih { color:var(--ikincil); font-size:15px; margin-bottom:24px; }
+  .kutu { background:var(--kart); border:1px solid var(--cizgi); border-radius:12px; padding:16px 18px; }
+  ul { padding-left:20px; } li { margin:6px 0; }
+  a { color:var(--vurgu); }
+  .alt { color:var(--ikincil); font-size:15px; margin-top:40px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Gizlilik Politikası</h1>
+<div class="tarih">Vekil Kasası (iOS) · Yürürlük: 12.10.2026</div>
+
+<div class="kutu"><strong>Kısaca:</strong> Vekil Kasası hiçbir veriyi geliştiriciye ya da üçüncü bir tarafa göndermez. Uygulamada
+hesap, geliştirici sunucusu, reklam, analiz ve izleme aracı yoktur. Girdiğiniz bütün kayıtlar telefonunuzda ve yedek olarak kendi
+iCloud hesabınızda, şifreli olarak tutulur; içeriği yalnız siz açabilirsiniz.</div>
+
+<h2>Uygulamayı sunan</h2>
+<p>Mehmet Sait Çakallı (App Store'daki geliştirici). İletişim: <a href="mailto:mscsoftware46@gmail.com">mscsoftware46@gmail.com</a></p>
+
+<h2>Toplanan veriler</h2>
+<p>Uygulama hesap açtırmaz ve oturum istemez. İnternete yalnız iki iş için çıkar: yedeği kendi iCloud hesabınıza yazıp oradan okumak ve
+aboneliğiniz varsa etkin olup olmadığını App Store'dan doğrulamak. Geliştirici, uygulamaya girdiğiniz müvekkil, dosya ve tutar bilgilerini göremez; bu bilgiler geliştiriciye ya da üçüncü bir
+tarafa iletilmez.</p>
+
+<h2>Telefonunuzda tutulanlar</h2>
+<ul>
+  <li>Müvekkil ve dosya bilgileri, ücret planları, tahsilat, masraf, emanet ve büro gideri kayıtları, kayıtlara eklediğiniz belge görüntüleri.</li>
+  <li>Bu kayıtlar şifreli bir defterde saklanır. Şifre anahtarı telefonun anahtar zincirinde, yalnız bu cihaza bağlı olarak tutulur
+  ve telefonun iCloud yedeğine girmez.</li>
+  <li>Uygulama açılırken Face ID ya da telefon parolası ister; uygulama arka plana geçince yeniden kilitlenir.</li>
+  <li>Büro adı, IBAN gibi ayarlar ve görünüm tercihleri de telefonda tutulur.</li>
+</ul>
+
+<h2>iCloud yedeği</h2>
+<p>Kasa her değişiklikten sonra kendiliğinden, Apple Hesabınızın <strong>özel</strong> iCloud alanına yedeklenir (Apple CloudKit).
+Yedek telefonda, uygulamanın ürettiği rastgele bir anahtarla şifrelenir; anahtar iCloud Anahtar Zinciri'nizde durur. Bu yüzden ne
+geliştirici ne de Apple yedeğin içeriğini okuyabilir. Şifresiz kalan yalnız yedeğin tarihi, sayılar (örneğin "12 dosya · 148
+kayıt"), her kurulumun rastgele kimliği ve anahtarın kısa izidir (anahtarın kendisi değil); ad, esas numarası ya da tutar şifresiz gitmez. Son yedek ve son 30 günün her günü
+saklanır. Yedeği Ayarlar › iCloud yedeği'nden kapatabilirsiniz.</p>
+
+<h2>Cihaz özellikleri ve izinler</h2>
+<ul>
+  <li><strong>Face ID / telefon parolası:</strong> Kasayı yalnız sizin açabilmeniz için. Biyometrik veri uygulamaya iletilmez; doğrulamayı iOS yapar.</li>
+  <li><strong>Kamera ve fotoğraflar:</strong> Dekont, makbuz ya da fiş taramak için, yalnız siz başlattığınızda. Metin tanıma telefonda yapılır;
+  görüntü şifreli kasada saklanır.</li>
+  <li><strong>Takvim:</strong> İsteğe bağlı "Duruşma günü kipi"nde bugünkü duruşmalarınızı dosyalarla eşleştirmek için okunur. Takvim bilgisi
+  telefondan çıkmaz ve saklanmaz.</li>
+  <li><strong>Bildirim:</strong> İsteğe bağlı bildirimler (haftalık özet, duruşma günü masraf hatırlatması; abonelikte avans son günü ve zamanaşımı hatırlatmaları) telefonda kurulur; müvekkil adı ve tutar içermez.</li>
+  <li><strong>Ana ekran bileşeni:</strong> Varsayılan olarak yalnız sayı gösterir (kaç müvekkilden ödeme isteyebileceğiniz gibi); müvekkil adı göstermez.</li>
+  <li><strong>Paylaşım:</strong> Ödeme hatırlatması, hesap özeti PDF'i ya da Excel dosyası yalnız siz paylaştığınızda, sizin seçtiğiniz
+  uygulamayla (Mesajlar, WhatsApp, Mail vb.) gönderilir.</li>
+</ul>
+
+<h2>Ücret</h2>
+<p>Uygulamayı indirmek ve temel özellikleri kullanmak ücretsizdir. İsteğe bağlı "Alacak Kalkanı" aboneliği (aylık ya da yıllık)
+ek araçları açar. Satın alma, yenileme ve iptal Apple tarafından App Store üzerinden yürütülür; geliştirici ödeme ya da kart
+bilgilerinizi görmez ve kimin abone olduğunu kişi bazında bilmez. Uygulama yalnız aboneliğin etkin olup olmadığını Apple'dan
+telefonda doğrular. Aboneliği Ayarlar › Apple Hesabı › Abonelikler'den yönetebilirsiniz; abonelik bitse de girdiğiniz bilgiler silinmez.</p>
+
+<h2>Verilerin silinmesi</h2>
+<p>Uygulamayı telefondan sildiğinizde telefondaki kasa ve kasanın anahtarı da silinir. iCloud'daki yedekler ve iCloud Anahtar
+Zinciri'ndeki yedek anahtarı, yeni telefona geri yükleyebilmeniz için kalır. iCloud'daki yedekleri iPhone Ayarlar'daki iCloud depolama
+yönetiminden (Ayarlar › [adınız] › iCloud › depolama) silebilirsiniz; anahtar tek başına hiçbir içerik açmaz.</p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama avukatların mesleki kullanımı içindir ve kimseden veri toplamaz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse güncel metin bu sayfada, yürürlük tarihiyle yayımlanır.</p>
+<p class="alt"><a href="index.html">Vekil Kasası</a> · <a href="destek.html">Destek</a> · © 2026 Mehmet Sait Çakallı</p>
+</main>
+</body>
+</html>
