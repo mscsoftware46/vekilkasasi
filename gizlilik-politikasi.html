@@ -21,19 +21,21 @@
 <body>
 <main>
 <h1>Gizlilik Politikası</h1>
-<div class="tarih">Vekil Kasası (iOS) · Yürürlük: 12.10.2026</div>
+<div class="tarih">Vekil Kasası (iPhone ve Android) · Yürürlük: 20.10.2026</div>
 
 <div class="kutu"><strong>Kısaca:</strong> Vekil Kasası hiçbir veriyi geliştiriciye ya da üçüncü bir tarafa göndermez. Uygulamada
 hesap, geliştirici sunucusu, reklam, analiz ve izleme aracı yoktur. Girdiğiniz bütün kayıtlar telefonunuzda ve yedek olarak kendi
-iCloud hesabınızda, şifreli olarak tutulur; içeriği yalnız siz açabilirsiniz.</div>
+iCloud ya da Google Drive hesabınızda, şifreli olarak tutulur; içeriği yalnız siz açabilirsiniz.</div>
 
 <h2>Uygulamayı sunan</h2>
-<p>Mehmet Sait Çakallı (App Store'daki geliştirici). İletişim: <a href="mailto:mscsoftware46@gmail.com">mscsoftware46@gmail.com</a></p>
+<p>Mehmet Sait Çakallı (App Store ve Google Play'deki geliştirici). İletişim: <a href="mailto:mscsoftware46@gmail.com">mscsoftware46@gmail.com</a></p>
 
 <h2>Toplanan veriler</h2>
-<p>Uygulama hesap açtırmaz ve oturum istemez. İnternete yalnız iki iş için çıkar: yedeği kendi iCloud hesabınıza yazıp oradan okumak ve
-aboneliğiniz varsa etkin olup olmadığını App Store'dan doğrulamak. Geliştirici, uygulamaya girdiğiniz müvekkil, dosya ve tutar bilgilerini göremez; bu bilgiler geliştiriciye ya da üçüncü bir
+<p>Uygulama hesap açtırmaz ve oturum istemez. İnternete yalnız iki iş için çıkar: yedeği kendi iCloud (iPhone) ya da Google Drive (Android) hesabınıza yazıp oradan okumak ve
+aboneliğiniz varsa etkin olup olmadığını App Store'dan ya da Google Play'den doğrulamak. Geliştirici, uygulamaya girdiğiniz müvekkil, dosya ve tutar bilgilerini göremez; bu bilgiler geliştiriciye ya da üçüncü bir
 tarafa iletilmez.</p>
+
+<p>Aşağıdaki bölümler iPhone sürümünü anlatır; Android sürümündeki farklar "Android" başlığındadır.</p>
 
 <h2>Telefonunuzda tutulanlar</h2>
 <ul>
@@ -74,6 +76,37 @@ telefonda doğrular. Aboneliği Ayarlar › Apple Hesabı › Abonelikler'den y�
 <p>Uygulamayı telefondan sildiğinizde telefondaki kasa ve kasanın anahtarı da silinir. iCloud'daki yedekler ve iCloud Anahtar
 Zinciri'ndeki yedek anahtarı, yeni telefona geri yükleyebilmeniz için kalır. iCloud'daki yedekleri iPhone Ayarlar'daki iCloud depolama
 yönetiminden (Ayarlar › [adınız] › iCloud › depolama) silebilirsiniz; anahtar tek başına hiçbir içerik açmaz.</p>
+
+<h2>Android</h2>
+<p>Android sürümü aynı ilkelerle çalışır: hesap, geliştirici sunucusu ve reklam yoktur; girdiğiniz kayıtlar geliştiriciye
+gönderilmez.</p>
+<ul>
+  <li><strong>Telefonda:</strong> kayıtlar şifreli bir defterde saklanır; şifre anahtarı Android Anahtar Deposu'nda (Android Keystore),
+  yalnız bu cihaza bağlı olarak durur ve dışarı çıkarılamaz. Uygulama parmak izi, yüz ya da ekran kilidiyle açılır; arka plana
+  geçince yeniden kilitlenir. Telefonda ekran kilidi yoksa kasa açılmaz. Kasa içeriği telefonun otomatik Android yedeğine ve
+  cihazdan cihaza aktarıma girmez.</li>
+  <li><strong>Google Drive yedeği:</strong> kasa kendiliğinden, Google hesabınızın Drive'ındaki uygulamaya özel gizli alana
+  (appDataFolder) yedeklenir. Bu alan Drive'da dosya olarak görünmez; uygulama Drive'ınızdaki başka hiçbir dosyaya erişmez. Yedek
+  telefonda, uygulamanın ürettiği rastgele bir anahtarla şifrelenir. Anahtar, Google'ın uçtan uca şifreli Block Store hizmetiyle
+  Google hesabınızın yedeğine konur. Uçtan uca şifreleme Android 9 ve sonrasında, ekran kilidi varken kullanılabilir; bu koşul
+  yoksa uygulama yedeği hiç başlatmaz. Bu yüzden ne geliştirici ne de Google yedeğin içeriğini okuyabilir. Şifresiz kalan yalnız
+  yedeğin tarihi, sayılar (örneğin "12 dosya · 148 kayıt"), her kurulumun rastgele kimliği ve anahtarın kısa izidir. Son yedek ve
+  son 30 günün her günü saklanır. Yedeği Ayarlar › Google Drive yedeği'nden kapatabilirsiniz.</li>
+  <li><strong>Metin tanıma ve belge tarayıcı:</strong> dekont ve fiş, Google ML Kit ile telefonun içinde okunur. ML Kit'in Google'a
+  kullanım kaydı gönderen bileşeni Android sürümünde kapatılmıştır. Kitaplık ileride bu davranışı değiştirebileceği için Google
+  Play "Veri güvenliği" bölümünde tanılama ve cihaz kimliği temkinle beyan edilmiştir. "Belgeyi tara", Google Play hizmetlerinin
+  belge tarayıcısını kullanır; Google'ın açıklamasına göre tarama akışının tamamı telefonda çalışır. Uygulama kamera izni istemez;
+  fotoğraf ve belge, Android'in seçicisiyle yalnız siz seçtiğinizde okunur.</li>
+  <li><strong>İzinler:</strong> takvim (isteğe bağlı "Duruşma günü kipi"; yalnız bugünün etkinlikleri telefonda okunur, saklanmaz),
+  bildirim (haftalık özet, duruşma akşamı, abonelikte avans ve zamanaşımı hatırlatmaları; müvekkil adı ve tutar içermez), telefon
+  yeniden başlayınca hatırlatmaları yeniden kurma. Ana ekran bileşeni varsayılan olarak yalnız sayı gösterir.</li>
+  <li><strong>Ücret:</strong> isteğe bağlı "Alacak Kalkanı" aboneliği Google Play üzerinden yürütülür; geliştirici ödeme ya da kart
+  bilgilerinizi görmez. Aboneliği Google Play Store › Profil › Ödemeler ve abonelikler › Abonelikler'den yönetebilirsiniz.</li>
+  <li><strong>Silme:</strong> uygulamayı kaldırdığınızda telefondaki kasa ve anahtarı silinir. Drive'daki yedekler, yeni telefona
+  geri yükleyebilmeniz için kalır. Google'ın açıklamasına göre bu gizli klasörü kendiniz silebilirsiniz; Vekil Kasası'nı Google
+  Drive'ınızdaki bağlı uygulamalardan kaldırdığınızda klasör de silinir. Yedek anahtarı, telefonunuzda Google yedeklemesi açıksa
+  Block Store'da kalır; tek başına hiçbir içerik açmaz.</li>
+</ul>
 
 <h2>Çocuklar</h2>
 <p>Uygulama avukatların mesleki kullanımı içindir ve kimseden veri toplamaz.</p>
